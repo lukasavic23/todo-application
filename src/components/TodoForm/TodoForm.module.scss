@@ -1,0 +1,33 @@
+.todo_form {
+  display: flex;
+  gap: 25px;
+
+  padding-top: 18px;
+
+  &_input {
+    flex-grow: 1;
+
+    :global {
+      .MuiInputBase-root {
+        border-radius: 9px;
+        border: 1px solid #bdbdbd;
+      }
+    }
+  }
+
+  &_button {
+    max-width: 109px;
+    width: 100%;
+
+    &:global {
+      &.MuiButtonBase-root {
+        border-radius: 9px;
+
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
